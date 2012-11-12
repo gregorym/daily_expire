@@ -9,7 +9,7 @@ Let says you run a daily deal website and you want to expire your cache every mo
 ```Erb
 <% cache [:deals], :every => :day, :at => '5am' do %>
   <% Deals.today.each do |deal| %>
-    <%= render deals %>
+    <%= render deal %>
   <% end %>
 <% end %>
 ```
